@@ -1,0 +1,305 @@
+DevOps Training:::
+
+#######################
+Day 1 - 29th July 2023
+#######################
+
+	Introduction to DevOps :::::
+	
+	
+		Software Applications? Collection of Programs
+
+			Types of Applications ?
+				Desktop Applications
+				Web Applications
+				Mobile Applications
+				
+		
+			How the Applications are developed and Delivered ?
+		
+		E_Commerce Application ::::
+		
+		Software Development Life Cycle - SDLC ::::
+		
+			- Requirement Analysis
+			- Design
+			- Code/Development
+			- Testing
+			- Implementation/Deployment
+			- Maintainence / Monitor
+			
+		Water-fall Model ::: --> Linear in approach
+
+			E_Commerce Application ::::		--> 9 Months
+			
+			Project 1: Core
+				- Requirement Analysis
+				- Design
+				- Code/Development
+				- Testing
+				- Implementation/Deployment
+				- Maintainence / Monitor
+				
+				
+			Project 2: Enhancement		
+			
+				- Requirement Analysis
+				- Design
+				- Code/Development
+				- Testing
+				- Implementation/Deployment
+				- Maintainence / Monitor
+				
+		Agile Methodologies ::: 
+		
+		E_Commerce Application ::::
+			10 Modules +5 
+		
+		Modules / Iterations / Functions ::
+		
+		Iteration1:
+			- Requirement Analysis
+			- Design
+			- Code/Development					*.java () - build - UT - promote the app to test envi.
+			- Testing
+			- Implementation/Deployment
+			- Maintainence / Monitor
+
+		Iteration2:
+			- Requirement Analysis
+			- Design
+			- Code/Development
+			- Testing
+			- Implementation/Deployment
+			- Maintainence / Monitor
+			
+
+		Iteration n:
+			- Requirement Analysis
+			- Design
+			- Code/Development
+			- Testing
+			- Implementation/Deployment
+			- Maintainence / Monitor
+			
+		Iteration 1.1:
+			- Requirement Analysis
+			- Design
+			- Code/Development
+			- Testing
+			- Implementation/Deployment
+			- Maintainence / Monitor
+			
+		Agile Methodologies can able to achieve :::
+		
+				Continous Development
+				Continous Integration
+				Continous Testing 
+				Continous Delivery		-		Always expects Approval for Production Release.
+				
+		Agile Methodologies can't able to achieve :::
+			
+				Continous Deployment	-		It is completely Automated - No Approvals are needed for Production Release.
+				
+			Why we Need approvals for Prod release ???
+			
+				
+	
+	
+		DevOps :::
+		
+			--> Is a software development strategy, which promotes the collaborations between the teams like Development Team and Operations Team to achieve Continous Development, Continous Integration, Continous Testing, Continous Delivery, Continous Deployment and Continous Monitoring in more automated fashion.
+			
+		Teams ::: 
+			
+			Infra-structure Management Team ==> Provision the Servers/Configure the Tools 
+			Development Team -> Application Owners/Architects/Leads/Developers ==> Create/Code Application
+			Testing Team ==> QA/UAT 
+			Release Management Team ==>  to prod releases
+			Production Support Team
+			Production Monitoring 
+			Security Team
+			
+			DevOps Team ::::
+			
+				Infra-structure Management Team ==> Provision the Servers/Configure the Tools 
+				Development Team -> Application Owners/Architects/Leads/Developers ==> Create/Code Application
+				Testing Team ==> QA/UAT 
+				Release Management Team ==>  to prod releases
+				Production Support Team
+				Production Monitoring 
+				Security Team
+				
+			DevOps Team ::::  --> DevOps Asso. / Sr. Asso. / DevOps Engg./ Leads/ DevOps Architects / Consultants
+			
+	Tele-Comm Domain :::
+			SP1 ==> Wants to introduce a new service/offer to their customers. IT
+			SP2 ==> Wants to introduce a new service/offer to their customers. IT
+			
+		DevOps Stages ::: ==> DevSecOps
+		
+		DevOps Stages :::
+		
+			Infra-structure Management Team ::
+				--> Server Provisioning 	-- IAC Tools --> Terraform
+				--> Server Configuration 	-- IAC Tools Ansible --> Configuration Management Tools
+		
+		
+			Continous Development :::
+				It is the capability of the Dev Team to continously develop the code.
+					- Coding 	Java -- HLL
+					
+					- Build --> Process of Compiling the src_code & Create Artifacts(Binaries) - *.war/*.jar/*.dll/*.exec
+					- Unit Testing 
+					- Promote the artifacts to Test environment
+					- Notify the Testing Team to pick up the app for further testing.
+				
+				Using DevOps Process/tools, we can automate everything from build stage.
+				
+					Tools like ::: IDEs - Integrated Development Environment - Eclipse / Visual Studio Code/Visual Studio / Pycharm/
+									Build --> Maven / Gradle / ant
+									Source Code Repository -- GIT - Used to Version Controll the src code.
+									Jenkins 
+									
+			Continous Integration :::	It is the capability of integrating the code for further testing.
+						Jenkins, docker / Kubernetes 
+			
+			Continous Testing
+						Automated Testing - TestNG / Selinium --> Jenkins 
+						QA 		-- Quality Assurance 
+						UAT     -- User Acceptance Testing
+
+			
+			Continous Delivery/Continous Deployment ==> Jenkins, Docker/Kubernetes, Ansible, docker / Kubernetes 
+			
+					Both Continous Delivery/Continous Deployment are refers to Prod Release.
+						If you manually approve the prod release - Continous Delivery
+						If you automate the prod release without any manual Intervension - Continous Deployment
+			
+			Continous Monitoring			
+						Infra-structure monitoring
+								--> Jenkins, Prometheus/Grafana/DynaTrace/Nagios,..........
+						Application Monitoring 
+								--> AppDyanamics
+								
+			Script Language :::
+				Groovy scripts 
+				python scripts
+				yaml scripts 
+				shell scripts
+				
+				
+			UseCase ::::
+			
+			Appication Architecture ::::
+				
+					--> Monolith Application Architecture
+								The Application Components/function/Modules are tightly coupled
+					
+					--> Micro Service based Application Architecture
+								The Application Components/function/Modules are loosely coupled
+								These Modules are called as services.
+								
+			www.amazon.com 
+			E_Commerce 
+			
+			
+			- sign_up			Micro-Service1 - Developer1 - code,test,promote the code for QA/UAT --> Deploy to Prod.
+			- sign_in			Micro-Service2 - Developer2 - code,test,promote the code for QA/UAT --> Deploy to Prod.
+			- search
+			- add to cart 
+			- place the order 
+			- payment 
+			- confirm the order 
+			- track 
+			
+			
+		Banking :::					--> Continous Delivery!
+			Online Banking	
+			Credit Online Service :::
+			
+				Open a Productio Release Window --> 4 - 6hrs. --> Non-Business Hours   --> Download time!
+				
+						Deployed --> Issue 
+											--> 1. Try to Fix the issue. 
+											--> 2. Revert. 
+											
+		Netflix			Continous Deployment ! 
+		facebook
+		amazon.com 
+			
+			
+			In order to achieve Continous Deployment --> we shd have a matured level of DevOps.
+			
+		DevOps is not about tools 
+		
+			DevOps is all about the People, Process and Tools 
+			
+			--> About Continous Improvement!
+			
+			--> Detailed DevOps Assessment!
+			
+			--> You should always search the scope for automation.
+			
+			waterfall - Agile - DevOps - DevSecOps - GitOps - SRE - MLOps - AIOps 
+				
+			DevOps Team ::::  --> DevOps Asso. / Sr. Asso. / DevOps Engg./ Leads/ DevOps Architects / Consultants
+			
+			
+
+Source Code Management System / Version Control System ::::::
+
+		GIT --> 
+		
+		Source Code :::
+		
+		*.html / *.css / 
+		
+		index.jsp 			== >Save this pgm in a folder/ ==> e:/project_workspace/index.jsp
+		
+		<html>
+			asdf
+			asdfa
+			sd
+			fashiondf
+			aasdfasdfasdfasdfsd
+			asdffsa
+			dfasdfasdfasdfasdfasdfasdf
+			scopedf
+			sdf
+			asdffas
+			d
+			adfasdfasdfasdfasdfasdf
+			asdfasdfasdfas
+			asdfasdfasdfa
+		</html>
+		
+		
+		Save the same file using Version Control System ::::
+		
+		index.html 		==> v1.0
+		index.html 		==> v1.2
+		index.html 		==> v1.3		--> Tag/Commit_ID/Version
+		index.html 		==> v1.4
+						
+						
+			GIT is one of the Open Source Distributed Version Control System :::
+			
+				--> It is used to track the changes.
+				--> It is used to version control the Changes.
+				--> It is used to perform Parallel Development.
+				
+			github		==> Remote GIT Repository
+			gitlab
+			bitbucket
+			azure repos
+			aws codecommit 
+			
+			
+		Repository ::: --> Collection of Folders/Files
+		
+	
+		github		==> Remote GIT Repository
+		https://github.com/
+		
+		
