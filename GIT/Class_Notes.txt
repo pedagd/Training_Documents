@@ -1,0 +1,558 @@
+DevOps Training:::
+
+#######################
+Day 1 - 29th July 2023
+#######################
+
+	Introduction to DevOps :::::
+	
+	
+		Software Applications? Collection of Programs
+
+			Types of Applications ?
+				Desktop Applications
+				Web Applications
+				Mobile Applications
+				
+		
+			How the Applications are developed and Delivered ?
+		
+		E_Commerce Application ::::
+		
+		Software Development Life Cycle - SDLC ::::
+		
+			- Requirement Analysis
+			- Design
+			- Code/Development
+			- Testing
+			- Implementation/Deployment
+			- Maintainence / Monitor
+			
+		Water-fall Model ::: --> Linear in approach
+
+			E_Commerce Application ::::		--> 9 Months
+			
+			Project 1: Core
+				- Requirement Analysis
+				- Design
+				- Code/Development
+				- Testing
+				- Implementation/Deployment
+				- Maintainence / Monitor
+				
+				
+			Project 2: Enhancement		
+			
+				- Requirement Analysis
+				- Design
+				- Code/Development
+				- Testing
+				- Implementation/Deployment
+				- Maintainence / Monitor
+				
+		Agile Methodologies ::: 
+		
+		E_Commerce Application ::::
+			10 Modules +5 
+		
+		Modules / Iterations / Functions ::
+		
+		Iteration1:
+			- Requirement Analysis
+			- Design
+			- Code/Development					*.java () - build - UT - promote the app to test envi.
+			- Testing
+			- Implementation/Deployment
+			- Maintainence / Monitor
+
+		Iteration2:
+			- Requirement Analysis
+			- Design
+			- Code/Development
+			- Testing
+			- Implementation/Deployment
+			- Maintainence / Monitor
+			
+
+		Iteration n:
+			- Requirement Analysis
+			- Design
+			- Code/Development
+			- Testing
+			- Implementation/Deployment
+			- Maintainence / Monitor
+			
+		Iteration 1.1:
+			- Requirement Analysis
+			- Design
+			- Code/Development
+			- Testing
+			- Implementation/Deployment
+			- Maintainence / Monitor
+			
+		Agile Methodologies can able to achieve :::
+		
+				Continous Development
+				Continous Integration
+				Continous Testing 
+				Continous Delivery		-		Always expects Approval for Production Release.
+				
+		Agile Methodologies can't able to achieve :::
+			
+				Continous Deployment	-		It is completely Automated - No Approvals are needed for Production Release.
+				
+			Why we Need approvals for Prod release ???
+			
+				
+	
+	
+		DevOps :::
+		
+			--> Is a software development strategy, which promotes the collaborations between the teams like Development Team and Operations Team to achieve Continous Development, Continous Integration, Continous Testing, Continous Delivery, Continous Deployment and Continous Monitoring in more automated fashion.
+			
+		Teams ::: 
+			
+			Infra-structure Management Team ==> Provision the Servers/Configure the Tools 
+			Development Team -> Application Owners/Architects/Leads/Developers ==> Create/Code Application
+			Testing Team ==> QA/UAT 
+			Release Management Team ==>  to prod releases
+			Production Support Team
+			Production Monitoring 
+			Security Team
+			
+			DevOps Team ::::
+			
+				Infra-structure Management Team ==> Provision the Servers/Configure the Tools 
+				Development Team -> Application Owners/Architects/Leads/Developers ==> Create/Code Application
+				Testing Team ==> QA/UAT 
+				Release Management Team ==>  to prod releases
+				Production Support Team
+				Production Monitoring 
+				Security Team
+				
+			DevOps Team ::::  --> DevOps Asso. / Sr. Asso. / DevOps Engg./ Leads/ DevOps Architects / Consultants
+			
+	Tele-Comm Domain :::
+			SP1 ==> Wants to introduce a new service/offer to their customers. IT
+			SP2 ==> Wants to introduce a new service/offer to their customers. IT
+			
+		DevOps Stages ::: ==> DevSecOps
+		
+		DevOps Stages :::
+		
+			Infra-structure Management Team ::
+				--> Server Provisioning 	-- IAC Tools --> Terraform
+				--> Server Configuration 	-- IAC Tools Ansible --> Configuration Management Tools
+		
+		
+			Continous Development :::
+				It is the capability of the Dev Team to continously develop the code.
+					- Coding 	Java -- HLL
+					
+					- Build --> Process of Compiling the src_code & Create Artifacts(Binaries) - *.war/*.jar/*.dll/*.exec
+					- Unit Testing 
+					- Promote the artifacts to Test environment
+					- Notify the Testing Team to pick up the app for further testing.
+				
+				Using DevOps Process/tools, we can automate everything from build stage.
+				
+					Tools like ::: IDEs - Integrated Development Environment - Eclipse / Visual Studio Code/Visual Studio / Pycharm/
+									Build --> Maven / Gradle / ant
+									Source Code Repository -- GIT - Used to Version Controll the src code.
+									Jenkins 
+									
+			Continous Integration :::	It is the capability of integrating the code for further testing.
+						Jenkins, docker / Kubernetes 
+			
+			Continous Testing
+						Automated Testing - TestNG / Selinium --> Jenkins 
+						QA 		-- Quality Assurance 
+						UAT     -- User Acceptance Testing
+
+			
+			Continous Delivery/Continous Deployment ==> Jenkins, Docker/Kubernetes, Ansible, docker / Kubernetes 
+			
+					Both Continous Delivery/Continous Deployment are refers to Prod Release.
+						If you manually approve the prod release - Continous Delivery
+						If you automate the prod release without any manual Intervension - Continous Deployment
+			
+			Continous Monitoring			
+						Infra-structure monitoring
+								--> Jenkins, Prometheus/Grafana/DynaTrace/Nagios,..........
+						Application Monitoring 
+								--> AppDyanamics
+								
+			Script Language :::
+				Groovy scripts 
+				python scripts
+				yaml scripts 
+				shell scripts
+				
+				
+			UseCase ::::
+			
+			Appication Architecture ::::
+				
+					--> Monolith Application Architecture
+								The Application Components/function/Modules are tightly coupled
+					
+					--> Micro Service based Application Architecture
+								The Application Components/function/Modules are loosely coupled
+								These Modules are called as services.
+								
+			www.amazon.com 
+			E_Commerce 
+			
+			
+			- sign_up			Micro-Service1 - Developer1 - code,test,promote the code for QA/UAT --> Deploy to Prod.
+			- sign_in			Micro-Service2 - Developer2 - code,test,promote the code for QA/UAT --> Deploy to Prod.
+			- search
+			- add to cart 
+			- place the order 
+			- payment 
+			- confirm the order 
+			- track 
+			
+			
+		Banking :::					--> Continous Delivery!
+			Online Banking	
+			Credit Online Service :::
+			
+				Open a Productio Release Window --> 4 - 6hrs. --> Non-Business Hours   --> Download time!
+				
+						Deployed --> Issue 
+											--> 1. Try to Fix the issue. 
+											--> 2. Revert. 
+											
+		Netflix			Continous Deployment ! 
+		facebook
+		amazon.com 
+			
+			
+			In order to achieve Continous Deployment --> we shd have a matured level of DevOps.
+			
+		DevOps is not about tools 
+		
+			DevOps is all about the People, Process and Tools 
+			
+			--> About Continous Improvement!
+			
+			--> Detailed DevOps Assessment!
+			
+			--> You should always search the scope for automation.
+			
+			waterfall - Agile - DevOps - DevSecOps - GitOps - SRE - MLOps - AIOps 
+				
+			DevOps Team ::::  --> DevOps Asso. / Sr. Asso. / DevOps Engg./ Leads/ DevOps Architects / Consultants
+			
+			
+
+Source Code Management System / Version Control System ::::::
+
+		GIT --> 
+		
+		Source Code :::
+		
+		*.html / *.css / 
+		
+		index.jsp 			== >Save this pgm in a folder/ ==> e:/project_workspace/index.jsp
+		
+		<html>
+			asdf
+			asdfa
+			sd
+			fashiondf
+			aasdfasdfasdfasdfsd
+			asdffsa
+			dfasdfasdfasdfasdfasdfasdf
+			scopedf
+			sdf
+			asdffas
+			d
+			adfasdfasdfasdfasdfasdf
+			asdfasdfasdfas
+			asdfasdfasdfa
+		</html>
+		
+		
+		Save the same file using Version Control System ::::
+		
+		index.html 		==> v1.0
+		index.html 		==> v1.2
+		index.html 		==> v1.3		--> Tag/Commit_ID/Version
+		index.html 		==> v1.4
+						
+						
+			GIT is one of the Open Source Distributed Version Control System :::
+			
+				--> It is used to track the changes.
+				--> It is used to version control the Changes.
+				--> It is used to perform Parallel Development.
+				
+			github		==> Remote GIT Repository
+			gitlab
+			bitbucket
+			azure repos
+			aws codecommit 
+			
+			
+		Repository ::: --> Collection of Folders/Files
+		
+	
+		github		==> Remote GIT Repository
+		https://github.com/
+		
+		
+		https://aws.amazon.com/console/ --> 
+		
+#######################
+Day 2 - 30th July 2023
+#######################
+
+	https://github.com/
+	
+	https://github.com/
+	
+	Version Control System using GIT !!!!!
+	
+	Software Application ==> Collection Programs ==> java/c#/html/
+	
+			GIT is one of the Open Source Distributed Version Control System :::
+			
+				--> It is used to track the changes.
+				--> It is used to version control the Changes.
+				--> It is used to perform Parallel Development.	
+
+		Save the same file using Version Control System ::::
+		
+		index.html 		==> v1.0
+		index.html 		==> v1.2
+		index.html 		==> v1.3		--> Tag/Commit_ID/Version
+		index.html 		==> v1.4									Build 		*.jar_v1.4
+		
+		
+	Version Control System ::
+	
+		- Local Version Control System
+		- Central Version Control System
+		- Distributed VCS
+		
+		GITHUB is one of the Remote Git Repositories
+		
+		Centralized VCS --> 
+			- There is a central server
+			- users should be online to access.
+			- There is no offline processing of data/Repo.
+			
+		Distributed VCS 
+			- Every user can have their local copy of repo.
+			- Work Offline 
+			- Do parallel development without impacting others.
+			
+	GIT :::
+	
+		-- Installation of GIT :::
+		-- Git File Workflow
+		-- Git Misc. Command we use on daily basis
+		-- Git Branching Strategies
+		-- Working with GIT Branches
+		-- Handling Remote Repositories.(GITHUB)
+		
+		
+	1. Installaion of GIT :::  https://git-scm.com/downloads
+	
+			On Windows ::
+				will have GIT BASH/CMD/GUI
+				
+				git --version
+				
+			Linux Machines!!!
+			
+			Working in Linux ::
+			
+				VM is AWS --> EC2 Instance means Virtual Machines!!
+				
+				Virtual Machines !!!!
+				
+			Mac -> 	GIT Installation!
+			
+			Window --> Linux Machine.
+			
+			
+			GIT in Windows :::
+			
+				BASH 
+				CMD 
+				GUI
+			
+		-- Git File Workflow :::
+		
+		Distributed VCS ==> Remote Repository  & Local Repository 
+		
+		index.html 		==> v1.0
+		index.html 		==> v1.2
+		index.html 		==> v1.3		--> Tag/Commit_ID/Version
+		index.html 		==> v1.4									Build 		*.jar_v1.4		
+		
+		Local Machine																				<====>						Remote Server
+		
+		Working Directory 						Staging Area 				Local Repository
+		
+		file1.txt		----------------> 		file1.txt	 ----------->	file1.txt_<Commit_ID>
+						git add 							  git commit
+			
+			
+		
+		git init 	===> Is used to initialize an new git repo in local machine.
+		
+		git add 	===> Is used to add the changes to staging area 
+		
+		git commit 	===> Used to commit the changes from staging area to local repo.
+		
+		git push  	===> Used to push the changes from local Repository to Remote Repository
+		
+		git fetch / git pull
+					===> Both git feth/pull is used to handle the incremental changes
+						Fetch is used to just check for the incremental changes and updates the changes only in local repo.
+						Pull is used to check for the incremental changes, updates the changes in local repo. as well as in working Directory.
+						
+		git fetch 	===> will just check for incremental Changes 
+		git pull  	===> git fetch + git Merge/checkout
+		
+		git clone 	===> It is used to copy the entire remote repository in to local Machine.
+		
+		fork		===> It is used to copy the entire remote repository to another remote repository.
+
+
+		Developer's Workload ???
+		
+			- New Project 
+			
+			- Enhancement/Bugfix  ==> push to remote ===> Actual remote repo. 
+			
+			
+		In you local Machine :::
+		
+			Create a e:/DevOps_July_Batch/Repo1
+										 /Repo2 
+										 /Repo3
+										 
+		git init ==> create a .git/ directory & a default branch 'master'
+		
+		
+		
+			GIT is one of the Open Source Distributed Version Control System :::
+			
+				--> It is used to track the changes.
+				--> It is used to version control the Changes.
+				--> It is used to perform Parallel Development.			
+				
+		
+		Before we very first commit just config the author details :::
+		
+		
+		Global Configuration ::
+			It is applicable for all the repos. 
+			
+			git config --list
+			
+			git config --global user.name "Loksai"
+			git config --global user.email "loksai@xyz.com"
+		
+		
+		Local Configuration
+			It is applicable to a specific repository. 
+	
+			git config user.name "Loksai"
+			git config user.email "loksai@xyz.com"	
+
+
+		git rm --cached <file1.txt>
+		git rm -f <file1.txt>
+		
+			
+		git add 
+		
+			git add <file1.txt>
+			git add a1.doc a1.html
+			git add s1.*
+			git add .
+			
+		commit Message ===> -m "CR_JUL_1001-Module"
+		
+			relevant to the current release 
+			
+			CR_Number/ReleaseID/
+			
+			CR_JUL_1001
+			
+		git status == used to get the status of repo.
+		
+		
+		git log --> 
+		
+		git log 
+		git log --oneline 
+		git log -3
+		git log --stat 
+		git log --oneline -2
+		
+		
+		Project :::
+		Java WebApplication :::
+			Workspace :::
+			
+		Project1:
+			index.jsp
+			payment.java 
+			
+		
+		git ignore!
+		
+		.gitignore file
+		
+		Project :::
+		Java WebApplication :::				git add  ==> git commit ==> git push ==>  remote repo.
+			src/main/java 
+				*.java 
+			src/test/java 
+			    *.java 
+			target/
+			    *.war
+				*.jar 
+			pom.xml
+			*.log 
+			dbcredentialfile
+			propertiesfile
+			
+		git rm is used to remove the changes from staging area.
+		
+		
+		git reset 
+					Used to undo the changes from local repo.
+			--soft  :: Used to undo the changes from local repo. the changes are back to staging area
+			
+			--mixed :: Used to undo the changes from local repo. the changes are back to working dir.
+			
+			--hard  :: Used to undo the changes from local repo. And permantly remove the changes.
+		
+		git reset :::
+				Remove the commit from the history.
+				It will never create any new commit point.
+				Reset hard should be avoided 
+						
+		
+		
+		git revert ::: 
+		
+				Used to undo the changes, without impacting the commit histroy.
+				It will create a new commit point thru which we can track the reverted actions
+				
+			
+		git commit -m "ADFAS""
+		
+			
+			Without creating a new commit point, we can change the commit message :
+			
+			git commit --amend -m "valid msg"
+			
